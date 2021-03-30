@@ -1,0 +1,11 @@
+[Unit]
+Description=Games
+
+[Service]
+ExecStart=/home/ubuntu/admin/startall.sh
+User=ubuntu
+Type=oneshot
+RemainAfterExit=true
+
+[Install]
+WantedBy=multi-user.target
